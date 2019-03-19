@@ -1,0 +1,6 @@
+# Ignore everything by default:
+/*
+
+# Make exceptions for the gitignore & source files
+!.gitignore
+!*.sh

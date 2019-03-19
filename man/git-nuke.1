@@ -1,0 +1,29 @@
+.TH GIT-NUKE 1
+.SH NAME
+git-nuke \- A utility to delete local git repositories.
+.SH SYNOPSIS
+.B git-nuke
+[\fB\-n,\ --new\fR]
+[\fB\-d,\ --data\fR]
+.SH DESCRIPTION
+.B git-nuke
+A small git extra to allow the user to easily delete the contents of local repositories in a safe & controlled manner.
+.SH OPTIONS
+.PP
+.BR -n,\ --new
+Creates a new git repository to replace the old git directory.
+.PP
+.BR -d,\ --data
+Deletes the contents of the working directory as well as the repository.
+.SH Usage
+.PP
+TLDR: \fBUSE\ AT\ YOUR\ OWN\ RISK\fR
+.PP
+Typically called `\fIgit\ nuke\fR` ad opposed to `\fIgit-nuke\fR`. Calling with no options will simply delete the `.git` directory in the local repository. This is considered a highly dangerous command, as it will erase all local revisioning data, and so it will always prompt the user for confirmation before taking action.
+.SH LICENSE
+.TP
+Copyright (C) 2019 Haximilian
+.PP
+This project is licensed under the Apache License, Version 2.0 (https://opensource.org/licenses/Apache-2.0).
+.PP
+For a complete copy of the license, please see the included "LICENSE" file.
